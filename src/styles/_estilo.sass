@@ -1,0 +1,143 @@
+body
+    font-family: 'Arial Rounded MT Bold','Tahoma'
+
+.input-default
+    border: 1px solid #000
+    border-radius: 4px
+    padding: 6px 12px
+    & .-submit
+        background-color: #5cb85c
+        border-color: #4cae4c
+        color: #FFF
+        font-size: 15px
+        font-weight: 500
+
+.form
+    border-radius: 10px
+    border: 1px solid #696969
+    box-shadow: 1px 1px 15px 1px #696969
+    padding: 30px
+    position: relative
+    text-align: center
+    &.-login
+        margin: 10% auto
+        width: 30%
+    &.-projetos
+        margin: 3% auto
+        text-align: center
+        width: 70%
+        >.listaprojetos
+            list-style: none
+            margin-top: 10px
+            text-align: left
+            >.itemprojeto
+                font-weight: bold
+                padding: 5px
+                &:hover
+                    color: #FFF 
+                    cursor: pointer  
+                    &.-claro
+                        background-color: $overcolor-claro
+                    &.-oi
+                        background-color: $overcolor-oi
+                    &.-nextel
+                        background-color: $overcolor-nextel
+                    &.-tim
+                        background-color: $overcolor-tim
+                    &.-vivo
+                        background-color: $overcolor-vivo   
+    &.-link
+        border: 0
+        box-shadow: none
+        display: none
+        >.listaatribo
+            list-style: none    
+            >.atributo 
+                >.listalink
+                    list-style: none
+                    text-align: left
+                    >.link
+                        display: inline-block   
+                        font-weight: 300
+                        padding: 6px 12px 
+                        width: 30%
+    &.-novoprojeto 
+        background: #fff
+        margin: 3% auto
+        width: 70%
+        .box-input
+            display: inline-block
+            width: 35%
+
+    &.-novoprojeto
+        background: #fff
+        margin: 3% auto
+        width: 70%
+        >.adicione
+            font-weight: bold
+        >.nomeprojeto
+            margin: 12px
+            width: 100%
+            text-align: left
+        .box-input
+            border: 0.5px solid #C0C0C0
+            display: inline-block
+            margin: 12px
+            text-align: center
+            width: 30%
+                    
+.box-novoprojeto
+    background: rgba(0,0,0,0.5)
+    display: none
+    height: 100%
+    position: absolute
+    width: 100%
+    z-index: 1
+
+.btn-adicionar
+    background-color: green
+    border-radius: 25px
+    margin-left: 85%
+    padding: 17px
+    position: absolute
+    a
+        text-decoration: none
+        color: #FFF
+        
+    >.mais
+        color: white
+        cursor: pointer
+        font-size: 25px
+        left: 50%   
+        position: absolute
+        top: 46%
+        transform: translate(-50%, -50%)
+        > a
+            color: #fff
+            text-decoration: none
+
+
+.icone
+    float: right
+    height: 15px
+    padding: 5px
+    width: 15px
+
+.bg-modal
+    background: rgba(0,0,0,0.5)
+    display: none
+    height: 100%
+    position: fixed
+    width: 100%
+    z-index: 1
+    &:target
+        display: block
+        pointer-events: auto
+        
+    .close
+        color: #000
+        float: right
+        font-weight: bold
+        margin: -25px -20px
+        position: relative
+        text-decoration: none

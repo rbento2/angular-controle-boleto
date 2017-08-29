@@ -1,0 +1,224 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.menu-superior {
+  width: 100%;
+  background-color: #4682B4;
+  height: 50px;
+  position: relative;
+}
+
+.menu-superior > .logo-cd {
+  color: #FFF;
+  height: 22px;
+  left: 3%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 150px;
+}
+
+body {
+  font-family: 'Arial Rounded MT Bold','Tahoma';
+}
+
+.input-default {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.input-default .-submit {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form {
+  border-radius: 10px;
+  border: 1px solid #696969;
+  box-shadow: 1px 1px 15px 1px #696969;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.form.-login {
+  margin: 10% auto;
+  width: 30%;
+}
+
+.form.-projetos {
+  margin: 3% auto;
+  text-align: center;
+  width: 70%;
+}
+
+.form.-projetos > .listaprojetos {
+  list-style: none;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-claro {
+  background-color: #8B0000;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-oi {
+  background-color: #C71585;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-nextel {
+  background-color: #FFA500;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-tim {
+  background-color: blue;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-vivo {
+  background-color: #4B0082;
+}
+
+.form.-link {
+  border: 0;
+  box-shadow: none;
+  display: none;
+}
+
+.form.-link > .listaatribo {
+  list-style: none;
+}
+
+.form.-link > .listaatribo > .atributo > .listalink {
+  list-style: none;
+  text-align: left;
+}
+
+.form.-link > .listaatribo > .atributo > .listalink > .link {
+  display: inline-block;
+  font-weight: 300;
+  padding: 6px 12px;
+  width: 30%;
+}
+
+.form.-novoprojeto {
+  background: #fff;
+  margin: 3% auto;
+  width: 70%;
+}
+
+.form.-novoprojeto .box-input {
+  display: inline-block;
+  width: 35%;
+}
+
+.form.-novoprojeto {
+  background: #fff;
+  margin: 3% auto;
+  width: 70%;
+}
+
+.form.-novoprojeto > .adicione {
+  font-weight: bold;
+}
+
+.form.-novoprojeto > .nomeprojeto {
+  margin: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.form.-novoprojeto .box-input {
+  border: 0.5px solid #C0C0C0;
+  display: inline-block;
+  margin: 12px;
+  text-align: center;
+  width: 30%;
+}
+
+.box-novoprojeto {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.btn-adicionar {
+  background-color: green;
+  border-radius: 25px;
+  margin-left: 85%;
+  padding: 17px;
+  position: absolute;
+}
+
+.btn-adicionar a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.btn-adicionar > .mais {
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  left: 50%;
+  position: absolute;
+  top: 46%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn-adicionar > .mais > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icone {
+  float: right;
+  height: 15px;
+  padding: 5px;
+  width: 15px;
+}
+
+.bg-modal {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.bg-modal:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.bg-modal .close {
+  color: #000;
+  float: right;
+  font-weight: bold;
+  margin: -25px -20px;
+  position: relative;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=maps/styles.css.map */
