@@ -1,9 +1,15 @@
 (function(){
-    angular.module('boleto-controle');
-    angular.module('boleto-controle').controller('navBar',navBar);
+    angular.module('boleto-controle',[])
+            .component('navBar',navBar());
     
     function navBar(){
-        var $ctrl=this;
-        $ctrl.teste = "teste";
+        return{
+            templateUrl:'/components/navbar/navBar.template.html',
+            controller: navBarCtrl
+        }
     }
-});
+    function navBarCtrl(){
+        var $ctrl = this;
+        
+    }
+})();

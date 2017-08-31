@@ -5,14 +5,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="../node_modules/angular/angular.js"></script>
+        <script src="components/navbar/navBar.template.js"></script>
     </head>
-    <body>
-        <nav>
-            <div class="menu-superior">
-                <img src="./img/logo-cd.png" class="logo-cd" />
-                <!--<span class="titulo">CELULAR DIRETO</span>-->
-            </div>
-        </nav>
+    <body ng-app="boleto-controle">
+        <nav-bar></nav-bar>
         <section class="form -login">
             <p>Digite seu login e senha.</p>
             <br>
