@@ -6,20 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
         <script src="../node_modules/angular/angular.js"></script>
+        <script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="app.module.js"></script>
         <script src="components/navbar/navBar.template.js"></script>
+        <script src="pages/home/home.template.js"></script>
+        <script src="pages/home/home.router.js"></script>
+        <script src="pages/login/login.template.js"></script>
+        <script src="pages/login/login.router.js"></script>
     </head>
-    <body ng-app="boleto-controle">
+    <body ng-app="app">
         <nav-bar></nav-bar>
-        <section class="form -login">
-            <p>Digite seu login e senha.</p>
-            <br>
-            <label for="login">Login: </label>
-            <input type="text" id="login" class="input-default -login" placeholder="Login" />
-            <br/><br/>
-            <label for="senha">Senha: </label>
-            <input type="password" id="senha" class="input-default -senha" placeholder="Senha"/>
-            <br><br>
-            <input type="submit" class="input-default -submit" value="Enviar" />
-        </section>
+        <page-home></page-home>
     </body>
 </html>

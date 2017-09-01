@@ -1,5 +1,5 @@
 (function(){
-    angular.module('boleto-controle',[])
+    angular.module('app')
             .component('navBar',navBar());
     
     function navBar(){
