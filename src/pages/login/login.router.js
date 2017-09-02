@@ -8,8 +8,12 @@
         $stateProvider
             .state('login',{
                 url: '/',
-                component: 'pageLogin'
+                templateUrl: '/pages/login/login.template.html',
+                controller: loginCtrl
             });
     }
 
+    function loginCtrl(){
+        var $ctrl = this;
+    } 
 })();
