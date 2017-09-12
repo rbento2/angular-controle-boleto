@@ -1,0 +1,58 @@
+.modal
+    &__container
+        background-color: $bg-padrao
+        position: relative
+        width: 100%
+
+    &__body
+        background-color: inherit
+        border: 0
+        padding: 0
+        width: 100%
+
+    &__footer
+        height: 20px
+
+@media only screen and (max-width: $max-mobile)
+    html, body
+        min-height: 100vh
+        position: relative
+
+    .modal
+        &__container
+            min-height: 100vh
+
+        &__body
+            overflow-x: hidden
+            padding-bottom: 20px
+
+        &__footer
+            background-position: center
+            bottom: 0
+            position: absolute
+            width: 100%
+
+@media only screen and (min-width: $min-desktop)
+    .modal
+        &__container
+            height: 580px
+            width: 775px
+
+        &__header
+            height: 35px
+            left: 0
+            position: absolute
+            top: 0
+            width: 100%
+            z-index: 1
+
+        &__body
+            border: 5px solid $borda-modal
+            height: 100%
+
+        &__footer
+            bottom: 0
+            left: 0
+            position: absolute
+            width: 100%
+            z-index: 1

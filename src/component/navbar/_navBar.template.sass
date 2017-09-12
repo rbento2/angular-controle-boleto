@@ -1,0 +1,35 @@
+.menu-superior
+    width: 100%
+    background-color: $cor-celulardireto
+    height: 50px
+    position: relative
+
+    > .logo-cd
+        color: #FFF
+        height: 22px
+        left: 3%
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 150px
+
+    > .opcoes-menu
+        float: right
+        position: relative
+        right: 5%
+        top: 25%
+
+        > .opcao
+            color: red
+            display: inline-block
+            padding: 3px 25px
+
+            &:hover
+                >.sub-menu
+                    background: #4682B4
+                    display: block
+                    padding: 10px
+                    position: absolute
+                    list-style: none
+            .sub-menu
+                display: none
