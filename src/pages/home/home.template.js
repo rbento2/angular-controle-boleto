@@ -1,15 +1,20 @@
-/*(function(){
+(function() {
     angular.module('app')
-            .component('pageHome',pageHome());
+        .component('pageHome',pageHome());
 
-    function pageHome(){
+    function pageHome() {
         return{
-            templateUrl:'/components/navbar/navBar.template.html',
+            templateUrl:'/pages/home/home.template.html',
             controller: navBarCtrl
+        };
+    }
+    /* @ngInject */
+    function navBarCtrl($state) {
+        var $ctrl = this;
+        $ctrl.prevStep = prevStep;
+
+        function prevStep() {
+            $state.go('login');
         }
     }
-    function navBarCtrl(){
-        var $ctrl = this;
-
-    }
-})();*/
+})();

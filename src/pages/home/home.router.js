@@ -4,17 +4,11 @@
 
     /* @ngInject */
     function homeRouter($stateProvider,$urlRouterProvider) {
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/');
         $stateProvider.state('home',{
             url:'/home',
-            templateUrl: '/pages/home/home.template.html',
-            controller: 'pageHome as home'
-            /*component: 'pageHome'*/
+            component: 'pageHome'
         });
     }
 
-    function pageHome() {
-        var $ctrl = this;
-        console.log('funfou');
-    }
 })();

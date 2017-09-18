@@ -5,11 +5,17 @@
 
     function pageLogin() {
         return{
-            templateUrl:'/pages/login/login.template.html',
+            templateUrl: '/pages/login/login.template.html',
             controller: loginCtrl
         };
     }
-    function loginCtrl() {
+    /* @ngInject */
+    function loginCtrl($state) {
         var $ctrl = this;
+        $ctrl.nextStep = nextStep;
+
+        function nextStep() {
+            $state.go('home');
+        }
     }
 })();

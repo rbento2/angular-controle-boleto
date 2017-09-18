@@ -4,12 +4,11 @@
 
     function navBar() {
         return{
-            templateUrl:'/components/navbar/navBar.template.html',
+            templateUrl:'../component/navbar/navBar.template.html',
             controller: navBarCtrl
         };
     }
     function navBarCtrl() {
         var $ctrl = this;
-
     }
 })();
