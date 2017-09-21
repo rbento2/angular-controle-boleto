@@ -9,12 +9,19 @@
         };
     }
     /* @ngInject */
-    function navBarCtrl($state) {
-        var $ctrl = this;
+    function navBarCtrl($state,StorageService) {
+        var $ctrl = this,
+            _dto = StorageService.get('DTO') || {} ;
+
         $ctrl.nextStep = nextStep;
 
-        function nextStep(step) {
+        function nextStep(step,subStep) {
+            _sendToStorage(step,subStep);
             $state.go(step);
+        }
+        function _sendToStorage(setp,subStep) {
+            _dto.currentStep = setp +'|'+ subStep;
+            StorageService.set('DTO',_dto);
         }
     }
 })();
