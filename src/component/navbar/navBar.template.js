@@ -8,7 +8,13 @@
             controller: navBarCtrl
         };
     }
-    function navBarCtrl() {
+    /* @ngInject */
+    function navBarCtrl($state) {
         var $ctrl = this;
+        $ctrl.nextStep = nextStep;
+
+        function nextStep(step) {
+            $state.go(step);
+        }
     }
 })();
