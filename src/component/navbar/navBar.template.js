@@ -15,13 +15,8 @@
 
         $ctrl.nextStep = nextStep;
 
-        function nextStep(step,subStep) {
-            _sendToStorage(step,subStep);
+        function nextStep(step) {
             $state.go(step);
-        }
-        function _sendToStorage(setp,subStep) {
-            _dto.currentStep = setp +'|'+ subStep;
-            StorageService.set('DTO',_dto);
         }
     }
 })();
