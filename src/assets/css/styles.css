@@ -7,19 +7,20 @@
 .menu-superior {
   width: 100%;
   background-color: #4682B4;
+  background-image: url("../../assets/img/logo-cd.png");
+  background-repeat: no-repeat;
+  background-size: 150px 30px;
+  background-position: 15px 10px;
   height: 50px;
   position: relative;
-}
-
-.menu-superior > .logo-cd {
-  color: #FFF;
-  height: 22px;
-  left: 3%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 150px;
+  /* > .logo-cd
+        color: #FFF
+        height: 22px
+        left: 3%
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 50px   */
 }
 
 .menu-superior > .opcoes-menu {
@@ -209,8 +210,7 @@ body {
   left: 50%;
   position: absolute;
   top: 46%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .btn-adicionar > .mais > a {

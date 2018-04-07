@@ -25,7 +25,7 @@ var sassOptions = {
 //convert scss to css
 gulp.task('styles', function () {
     gulp
-        .src('./src/styles/**/*.sass')
+        .src('./src/assets/styles/**/*.sass')
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(autoprefixer())
@@ -102,7 +102,7 @@ gulp.task('serve', ['styles'], function () {
         }
     });
 
-    gulp.watch('./src/**/*.sass', ['styles']);
+    gulp.watch('./src/**/*.sass', ['styles']).on('change', browserSync.reload);;
     gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 

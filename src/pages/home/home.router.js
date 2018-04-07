@@ -1,19 +1,15 @@
 (function(){
     angular.module('app')
         .config(homeRouter);
-
-    function homeRouter($stateProvider,$urlRouterProvider){
-        $urlRouterProvider.otherwise('/home');
-        $stateProvider.state('home',{
-                url:'/home',
-                templateUrl: '/pages/home/home.template.html',
-                controller: pageHome
-                /*component: 'pageHome'*/
-            });
+    /* @ngInject */
+    function homeRouter($stateProvider,$urlRouterProvider,$locationProvider){
+        $stateProvider.state('Main',{
+            url:'/home',
+            templateUrl: '/pages/home/home.template.html',
+            component: 'pageHome'
+            
+        });
+        
     }
     
-    function pageHome(){
-        var $ctrl = this;
-        console.log('funfou');
-    }
 })();

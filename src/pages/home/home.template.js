@@ -1,15 +1,16 @@
-/*(function(){
+(function(){
+    console.log('dADSasdASDasdaSDasdasd')
     angular.module('app')
             .component('pageHome',pageHome());
     
     function pageHome(){
         return{
             templateUrl:'/components/navbar/navBar.template.html',
-            controller: navBarCtrl
+            controller: homeController
         }
     }
-    function navBarCtrl(){
+    function homeController(){
         var $ctrl = this;
         
     }
-})();*/
+})();
