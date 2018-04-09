@@ -1,15 +1,11 @@
 <nav>
     <div class="menu-superior">
-        <ul class="opcoes-menu" ng-if="">
-            <li class="opcao">Clientes
+        <ul class="opcoes-menu">
+            <li class="opcao" ng-repeat="cliente in $ctrl.cliente">{{cliente.tipo}}
                 <ul class="sub-menu">
-                    <li>Cadastrar</li>
-                    <li>Buscar</li>
-                    <li>Alterar</li>
+                    <li ng-repeat="operadora in cliente.operadoras">{{operadora}}</li>
                 </ul>
             </li>
-            <li class="opcao">Boletos</li>
-            <li class="opcao">Outro</li>
         </ul>
     </div>
 </nav>
