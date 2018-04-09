@@ -8,8 +8,10 @@
             controller: navBarCtrl
         }
     }
-    function navBarCtrl(){
+    /* @ngInject */
+    function navBarCtrl(ServiceCliente){
         var $ctrl = this;
         
+        $ctrl.cliente = ServiceCliente.getClient();
     }
 })();
